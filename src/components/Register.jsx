@@ -34,14 +34,14 @@ const Register = () => {
   }
   
 
-
   const registerUser = (e) => {
     e.preventDefault();
     setUser({username: '', password: ''});
     const newUser = {
       id: uuidv4(),
       username: user.username,
-      password: user.password
+      password: user.password,
+      posts: []
     }
     if(newUser.id && newUser.username && newUser.password) {
       let userFind = listUser.find((user) => user.username === newUser.username);
@@ -68,6 +68,7 @@ const Register = () => {
         <input type="password" placeholder="Ingrese una contraseña" value={user.password} name="password" onChange={handleInputChange} />
         <button onClick={registerUser}>Registrarse</button>
       </form>
+      <p>Si ya tienes una cuenta <a href="/">Inicia Sesion aquí</a></p>
     </div>
   );
 }
