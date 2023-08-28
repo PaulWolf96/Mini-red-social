@@ -1,12 +1,12 @@
 const Navbar = () => {
   return (
-      <nav>
-        <ul>
-          <li><a href="/">Iniciar Sesion</a></li>
-          <li><a href="/register">Registrarse</a></li>
-          <li><a href="/posts">Posts</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul>
+        <li><a href="/">iniciar Sesion</a></li>
+        <li><a href="/register">Registrarse</a></li>
+        <li><a href="/posts">Posteos</a></li>
+      </ul>
+    </nav>
   );
 }
 

@@ -3,9 +3,6 @@ import ShowPost from "../components/ShowPost";
 
 
 const PostPage = () => {
-
-  
-
   return (
     <>
       <Navbar />
