@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import FormPost from "./FormPost";
 import Post from "./Post";
-import { useNavigate } from "react-router-dom";
+
 
 const ShowPost = () => {
 
@@ -19,23 +19,23 @@ const ShowPost = () => {
   }, [listPosts])
 
 
+  /* useEffect(() => {
+
+  }, [posts]) */
+
+/*   //Obtengo el arreglo del localStorage donde están los posteos.
+  let posts = JSON.parse(localStorage.getItem("Posts")); */
 
   const publicarPost = (post) => {
-    setListPosts([...listPosts, post]);
+    if(post.titulo && post.imgUrl) {
+      setListPosts([...listPosts, post]);
+    } else {
+      alert('Rellene ambos campos');
+    }
   }
-
-
-  const navigate = useNavigate();
-
-  const logOut = () => {
-    localStorage.removeItem("Sesion Usuario");
-    navigate('/');
-  }
-
 
   return (
-    <div className='container-post'>
-      <button onClick={logOut}>Cerrar Sesion</button>
+    <div className='container container-post w-50'>
       <br />
       <br />
       <FormPost
@@ -50,7 +50,7 @@ const ShowPost = () => {
             titulo={post.titulo}
             imgUrl={post.imgUrl}
             date={post.date}
-            comment={post.comment}
+            comments={post.comment}
           />
         )
       }

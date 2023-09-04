@@ -18,8 +18,7 @@ const FormPost = ( { publicarPost } ) => {
   //Traigo el usuario logueado
   const userLogin = JSON.parse(localStorage.getItem("Sesion Usuario"));
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
     let date = new Date();
     //El metodo padStart es para rellenar un string. 
     //El primer argumento es la longitud deseada y el otro es el caracter para rellenarlo.
@@ -38,17 +37,20 @@ const FormPost = ( { publicarPost } ) => {
 
   return (
 
-    <>
-      <button onClick={() => setClick(true)}>Nueva Publicación</button>
+    <div className="container">
+      <button className="btn btn-primary" onClick={() => setClick(true)}>Nueva Publicación</button>
       {
         click && 
           <form action="">
-            <input type="text" placeholder="Titulo de la Foto" name="titulo" onChange={handleInputChange} />
-            <input type="text" placeholder="URL de la Foto" name="imgUrl" onChange={handleInputChange} />
-            <button onClick={handleSubmit}>Publicar</button>
+            <br />
+            <input type="text" className="form-control" placeholder="Titulo de la Foto" name="titulo" onChange={handleInputChange} />
+            <br />
+            <input type="text" className="form-control" placeholder="URL de la Foto" name="imgUrl" onChange={handleInputChange} />
+            <br />
+            <button className="btn btn-primary" onClick={handleSubmit}>Publicar</button>
           </form> 
       }
-    </> 
+    </div> 
   );  
 }
 
