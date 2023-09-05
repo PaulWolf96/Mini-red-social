@@ -2,7 +2,7 @@
   "name": "mini-red-social",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://paulwolf96.github.io/mini-red-social/build",
+  "homepage": "https://paulwolf96.github.io/mini-red-social",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

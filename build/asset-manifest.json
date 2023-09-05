@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/mini-red-social/build/static/css/main.7eebc124.css",
-    "main.js": "/mini-red-social/build/static/js/main.323866c2.js",
-    "index.html": "/mini-red-social/build/index.html",
-    "main.7eebc124.css.map": "/mini-red-social/build/static/css/main.7eebc124.css.map",
-    "main.323866c2.js.map": "/mini-red-social/build/static/js/main.323866c2.js.map"
+    "main.css": "/mini-red-social/static/css/main.7eebc124.css",
+    "main.js": "/mini-red-social/static/js/main.323866c2.js",
+    "index.html": "/mini-red-social/index.html",
+    "main.7eebc124.css.map": "/mini-red-social/static/css/main.7eebc124.css.map",
+    "main.323866c2.js.map": "/mini-red-social/static/js/main.323866c2.js.map"
   },
   "entrypoints": [
     "static/css/main.7eebc124.css",
