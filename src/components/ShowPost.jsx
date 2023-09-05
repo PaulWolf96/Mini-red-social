@@ -19,13 +19,6 @@ const ShowPost = () => {
   }, [listPosts])
 
 
-  /* useEffect(() => {
-
-  }, [posts]) */
-
-/*   //Obtengo el arreglo del localStorage donde están los posteos.
-  let posts = JSON.parse(localStorage.getItem("Posts")); */
-
   const publicarPost = (post) => {
     if(post.titulo && post.imgUrl) {
       setListPosts([...listPosts, post]);
