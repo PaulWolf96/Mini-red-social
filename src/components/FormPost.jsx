@@ -41,7 +41,7 @@ const FormPost = ( { publicarPost } ) => {
       <button className="btn btn-primary" onClick={() => setClick(true)}>Nueva Publicación</button>
       {
         click && 
-          <form action="">
+          <form>
             <br />
             <input type="text" className="form-control" placeholder="Titulo de la Foto" name="titulo" onChange={handleInputChange} />
             <br />
